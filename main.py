@@ -13,12 +13,12 @@ employees = cursor.fetchall()
 print(employees[0])
 
 # Insert a new genre
-query = 'INSERT INTO genres (Name) values ("Funk")'
+query = 'INSERT INTO genres (Name) values ("Funk");'
 cursor.execute(query)
 # Before a change is written to the database, it must be committed
 conn.commit()
 
 
 # Close the connection at the end
-conn.commit()
+conn.close()
 
