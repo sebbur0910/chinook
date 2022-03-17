@@ -10,7 +10,6 @@ employee_1 = cursor.fetchone()
 employees_2_3 = cursor.fetchmany(2)
 employees_rest = cursor.fetchall()
 
-
 # Print out employees
 print(employee_1)
 print(employees_2_3)
@@ -22,7 +21,5 @@ cursor.execute(query)
 # Before a change is written to the database, it must be committed
 #conn.commit()
 
-
 # Close the connection at the end
 conn.close()
-
